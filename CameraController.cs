@@ -5,12 +5,13 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField] public float sensitivity = 2.0f;
-
+    public bool canLook = true;
     float rotationX = 0.0f;
 
 
     void Update()
     {
+        if (!canLook) return;
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
 
