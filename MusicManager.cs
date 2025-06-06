@@ -14,7 +14,7 @@ public class MusicManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);  // музыка не пропадает при смене сцен
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
