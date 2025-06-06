@@ -24,17 +24,13 @@ public class GameManager : MonoBehaviour
     {
         collected++;
         UpdateUI();
-
-        if (collected >= total)
-        {
-            ShowWinScreen();
-        }
     }
 
     void UpdateUI()
     {
-        counterText.text = $"Собрано: {collected}/{total}";
+        counterText.text = $"РЎРѕР±СЂР°РЅРѕ: {collected}/{total}";
     }
+
 
     void ShowWinScreen()
     {
